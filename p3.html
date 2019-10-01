@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product landing page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+   *{margin:0;
+   padding:0;
+    
+   }
+   
+   #flex-container
+   {
+     background:radial-gradient(pink,orange);
+	 display:flex;
+    flex-direction:row-reverse;
+      justify-content:space-between;
+   }   
+   #flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+ 
+}
+   
+   body{
+   background-color:lightgreen;}
+        #header{
+		  font-size:75px;
+		  text-align:center;	
+          border:2px solid orange;
+          overflow:hidden;			  
+		  }
+		#form
+		{
+		 text-align:center;
+		}
+		#nav-bar
+		{
+		position:fixed;
+		top:0;
+		right:0;
+		display:inline-block;
+		}
+		#size
+		{
+		font-size:20px;
+		text-decoration:none;
+		}
+		#email{}
+		 
+		#submit{
+		background-color:pink;
+		}
+		#ftrs{}
+		div{
+		text-align:center;}
+		#video{
+		width:500px;
+		height:300px;
+		}
+		.nav-link{}
+		
+		#header-img
+		  {
+		    float:left;
+			width:100px;
+		  }
+     @media only screen and (max-width: 300px)
+	 {
+	 body
+	 {
+	     background-color: red;
+      }		 
+	 }
+   </style>
+</head>
+
+
+<body>
+   <h1 id="header">Lego builder
+   <img id="header-img" src="lego.png">
+    <nav id="nav-bar">
+		<a class="nav-link" id="size" href="#ftrs">Features</a>
+		<a class="nav-link" id="size" href="#video">Video</a> 
+		<a class="nav-link" id="size" href="#flex-container">Price</a> 
+	</nav>
+   <h1>
+     <br>
+	 <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+	  <input id="email" type="email" name="email" placeholder="enter your email id" autofocus>
+	   <input id="submit" type="submit" value="Submit..">
+	   
+	 </form>
+	 <br>
+	 <hr>
+
+	   <ul style="text-align:center" id="ftrs">
+		     <li>cars</li>
+			 <li>planes</li>
+	         <li>bikes</li>
+	         <li>cds</li>
+	         <li>softtoys</li>
+	         <li>blocks</li>
+		</ul>
+	<hr>
+	<section style="background:linear-gradient(blue,green)">
+	<em>
+	hi<br>
+	lets<br>
+	try<br>
+	something<br>
+	exciting<br>
+	</section>
+	</em>
+	 <br>
+	 <div>
+      <iframe id="video" src="vid.mp4">
+	  embedded video
+	  </iframe>
+	  </div>
+	  <br>
+	 
+	 <div id="flex-container">
+	   <div>1</div>
+	   <div>2</div>
+	   <div>3</div>
+	 </div>  
+</body>   
+</html>

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>survey form</title>
+<meta link="stylesheet" type="text/css" href="fin.jpg">
+   <style>
+       textarea{
+	   display:inline-block;}
+	   div{
+	      text-align:left;
+		  display:inline-block;
+		  }
+		  #submit{}
+       #dropdown{
+	       width:120px;
+		   height:50px;
+	   }
+	   
+	   
+       body{
+	       background-image:url('fin.jpg');
+		   background-repeat:repeat-y;
+		  }  
+   
+   
+      #title
+	  {
+	   color:maroon;
+	   background-color:rgba(150,100,150,0.3);
+	   font-size:50px;
+	   text-align:center;
+	   border:2px solid black;
+	   padding:5px;
+	  } 
+	  #description
+	  {
+	    text-align:center;
+		background:yellow;
+		opacity:.4;
+	  }
+	  #survey-form
+	  {
+	    background:gray;
+		text-align:center;
+	  }
+	  #name{
+	     width:200px;
+		 height:40px;
+		} 
+		
+	  #email
+	  {
+
+	     width:200px;
+		 height:40px;
+		} 
+	  #number
+	   {
+	     width:200px;
+		 height:40px;
+	   }
+    	  #name-label{}
+          #email-label{}
+	  #number-label{}
+   </style>
+</head>
+
+
+<body>
+   <h1 id="title"> Survey form </h1>
+   <p id="description"><strong>Please fill in the car of your choice<strong></p>
+   <form id="survey-form" action="" method="get">
+ 
+	 <label id="name-label" style="cursor:pointer" for="name">  
+       *Name: <input id="name"  type="text" name="fullname" placeholder="enter name" required>
+    </label> 
+      	 <br>
+	  <label id="email-label"  style="cursor:pointer" for="email">
+       *Email: <input id="email"  type="email" name="email" placeholder="enter mail id" required>
+     </label> 
+	    <br>
+		<label id="number-label" style="cursor:pointer" for="number"> 
+       *Age: <input id="number" type="number" name="number" min="1" max="5" placeholder="enter number" required>
+    
+      </label>
+
+   <br>
+      <p>this is a dropdown
+		<select id="dropdown">
+		   <option value="1">1</option>
+		   <option value="2">2</option>
+		   <option value="3">3</option>
+		 </select>  
+		 </p>
+		 
+		<div> 
+	  <p >choose from the radio button	 </p>
+	  
+	      <input   type="radio" name="choice" value="audi" >audi<br>
+		  <input   type="radio" name="choice" value="bmw" >bmw<br>
+	      <input   type="radio" name="choice" value="mercedes" >mercedes
+		 </div>
+	    <br>
+	    <div> 
+	  <p >choose from the checkboxes	 </p>
+	  
+	      <input   type="checkbox" name="choice2" value="a" >audi<br>
+		  <input   type="checkbox" name="choice2" value="b" checked >bmw<br>
+	      <input   type="checkbox" name="choice2" value="m" >mercedes
+		 </div>
+		 <br>
+		<span style="float:left">Any comment or suggestions?<span> 
+	   <textarea rows="5" cols="50" placeholder="enter text here..">
+     
+        </textarea>
+        <input id="submit" type="submit" value="Submit">
+   </form>
+   
+   
+</body>   
+</html>

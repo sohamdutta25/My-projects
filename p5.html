@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Portfolio Webpage</title>
+<meta name="viewport" content="width=width, initial-scale=1.0">
+<style>
+      body{
+	  margin:0;}
+	  
+    #welcome-section{
+    position:relative;	
+	height:100vh;
+	color:white;
+	font-size:50px;
+	background:linear-gradient(135deg,gray,black);
+	font-family:"Georgia";
+	text-align:center;
+	}
+	
+	#welcome-section h1{
+	 position:absolute;
+     padding-top:175px;
+	 padding-left:425px;
+	}
+	
+	#welcome-section h5{
+	 position:absolute;
+     padding-top:250px;
+	 padding-left:550px;
+	}
+	
+     .project-tile{
+	   text-decoration:none;
+	   display:block;}
+	 
+	 #navbar{
+	   border:1px solid yellow;
+	   margin:0;
+	   position:fixed;
+	   top:0;
+	   right:0;
+	   padding: 0 20px;
+	   background:rgba(240,90,190,.8);
+	   width:100%;
+	   height:auto;
+	 }
+	 
+	 
+	 #navbar a
+	 {
+	 height:60px;
+	 padding:5px 10px;
+	 text-decoration:none;
+	 display:block;
+	 float:right;
+	 }
+	 
+	 
+	 #navbar a:hover{
+	 background-color:orange;
+	 }
+	 
+	 
+	 
+	 #projects{
+     	 text-align:center;
+     	 font-family:Arial;
+	 height:100vh;
+	 background:rgb(255, 255, 153);
+	 }
+	 
+	 
+	 div
+	 {
+	   width:200px;
+	   height:100px;
+	   border:1px dotted black;
+	 }
+	 div:hover{
+	 background-color:white;
+	 cursor:pointer;
+	 }
+	 
+	 #sec{
+	 padding:50vh;
+	 text-align:center;
+	 color:white;
+	 background:linear-gradient(315deg,gray,black);
+	 }
+	 
+	 
+	 
+	 ul{
+	 width:100%;
+	 padding-left:80px;
+	 list-style-type:none;
+	 font-family:"Trebuchet MS";
+	 color:rgb(255, 204, 179);
+	 }
+	 ul a{
+	    float:left;
+	    text-decoration:none;
+	    padding:20px;
+	 }
+	 ul a:link{
+	 color:white}
+	 ul a:visited{
+	 color:rgb(255, 204, 179);}
+	 ul a:hover{
+
+	 transform: translateY(3px);
+	   color:rgb(255, 170, 128);
+	 }
+	 ul a:active{
+	    color:rgb(255, 85, 0);}
+		
+	
+	@media screen and (max-width:500pt)
+    {
+       body
+	   {
+       background-color:white;
+	   }
+    }	   
+		#profile-link{}
+</style>
+
+<body>
+  <section id="welcome-section">
+      <h1>Hey I am Soham </h1>
+         <h5 style="color:maroon"><em>a web developer</em></h5>
+   </section>
+   
+   <section id="projects">
+    <h1>These are some of my projects<h1>
+	  <div>
+     <a class="project-tile"  href="file:///C:/Users/SOHAM/Desktop/projects/p1.html" target="_blank">My 1<sup>st</sup> project</a>
+	 </div>
+	 <div>
+	 <a class="project-tile" href="file:///C:/Users/SOHAM/Desktop/projects/p2.html" target="_blank">my 2<sup>nd</sup> project</a>
+	 </div>
+	 <div>
+	 <a class="project-tile" href="file:///C:/Users/SOHAM/Desktop/projects/p3.html" target="_blank">My 3<sup>rd</sup> project</a>
+	 </div>
+	 <div>
+	 <a class="project-tile" href="file:///C:/Users/SOHAM/Desktop/projects/p4.html" target="_blank">my 4<sup>th</sup> project</a>
+	 </div>
+   </section>
+
+   <nav id="navbar">
+      
+	  <a href="#sec">Contact</a>
+	  <a href="#projects">Work</a>
+	  <a href="#welcome-section">About</a>
+	</nav>  
+   
+    <section id="sec">
+      <h1>You can contact me on</h1>
+	    <ul>	   
+	     <li><a id="profile-link"  href="https://www.facebook.com/" target="_blank"><img src="do.png" alt="facebook link" width="50px" height="40px" >facebook</a></li>
+		 <li><a href="https://twitter.com/" target="_blank"><img src="do.png" alt="facebook link" width="50px" height="40px" >twitter</a></li>
+		 <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="do.png" alt="facebook link" width="50px" height="40px" >Email</a></li>
+		 <li><a href="https://true-phone.en.uptodown.com/android" target="_blank"><img src="do.png" alt="facebook link" width="50px" height="40px" >Mobile</a></li>
+		</ul> 
+    </section>
+   
+</body>   
+</html>
